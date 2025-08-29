@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>About — Rev Christ Street Ministry</title>
+  <link rel="stylesheet" href="assets/styles.css"/>
+  <link rel="icon" href="images/logo.png">
+  <meta name="description" content="Rev Christ Street Ministry — About. EIN 86-3870767.">
+</head>
+<body>
+<header class="header">
+  <div class="container nav">
+    <a class="brand" href="index.html" aria-label="Home"><img src="images/logo.png" alt="Rev Christ Street Ministry logo"></a>
+    <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+    <nav class="links" aria-label="Main">
+      <a href="about.html">About</a>
+      <a href="programs.html">Programs</a>
+      <a href="governance.html">Governance</a>
+      <a href="contact.html" class="btn btn-primary">Contact</a>
+    </nav>
+  </div>
+</header>
+<main class="section container split">
+  <div>
+    <h1>About Rev Christ Street Ministry</h1>
+    <p><strong>Rev Christ Street Ministry</strong> operates as a California Nonprofit Public Benefit Corporation and a recognized <strong>501(c)(3)</strong> with EIN <strong>86-3870767</strong>.</p>
+    <p><em>Specific purpose:</em> provide outreach services to homeless individuals (men, women, and children) by offering clean clothes, hygiene resources and products, food, and community‑building support; we also provide clean towels, undergarments, toiletries, personal care items, clothing, laundry vouchers, masks, and hand sanitizer; offer access to safe, dignified showers; and connect people with referrals for food, clothing, shelter, and transitional housing. We also support case management, on‑site clinic access, health and mental‑health workshops and screenings, educational services, computer literacy, senior care services, government benefits, social services advocacy, support groups, job counseling, and self‑expression classes. Our program aims to improve life management skills and reduce unemployment for low‑income and/or homeless individuals and families in Los Angeles.</p>
+    <ul class="small">
+      <li>No substantial part of our activities involves lobbying or political campaigning.</li>
+      <li>Assets are irrevocably dedicated to charitable purposes; upon dissolution, assets will transfer to a 501(c)(3) with a similar mission.</li>
+      <li>Service area: City of Los Angeles and Los Angeles County.</li>
+    </ul>
+  </div>
+  <figure class="figure"><img src="images/about.jpg" alt="About our mission and outreach"></figure>
+</main>
+
+<section class="section container grid-3">
+  <div class="card"><div class="card-body">
+    <strong>Address</strong>
+    <p class="small">4615 Coliseum Street, #9, Los Angeles, CA 90016</p>
+  </div></div>
+  <div class="card"><div class="card-body">
+    <strong>Contact</strong>
+    <p class="small">Email: contact@revchriststreetministry.site<br>Phone: +1 821 201 9675</p>
+  </div></div>
+  <div class="card"><div class="card-body">
+    <strong>Focus Areas</strong>
+    <p class="small">Relief • Health • Education & Employment</p>
+  </div></div>
+</section>
+<footer class="footer">
+  <div class="container grid">
+    <div>
+      <img src="images/logo.png" alt="" style="width:160px;height:auto;margin-bottom:.5rem;">
+      <div class="small">© <span id="year"></span> Rev Christ Street Ministry</div>
+      <div class="small">California Nonprofit Public Benefit • 501(c)(3) • EIN 86-3870767</div>
+    </div>
+    <div>
+      <div class="small"><strong>Mission:</strong><br>We provide outreach services to homeless individuals (men, women, and children) by offering clean clothes, hygiene resources and products, food, and community‑building support.</div>
+    </div>
+    <div>
+      <div class="small">
+        <strong>Address:</strong><br>4615 Coliseum Street, #9<br>Los Angeles, CA 90016<br>
+        <strong>Email:</strong> <a href="mailto:contact@revchriststreetministry.site">contact@revchriststreetministry.site</a><br>
+        <strong>Phone:</strong> <a href="tel:+18212019675">+1 821 201 9675</a>
+      </div>
+    </div>
+  </div>
+</footer>
+<script>
+  const b=document.querySelector('.menu-toggle'), l=document.querySelector('.links');
+  if(b&&l){b.addEventListener('click',()=>{const o=getComputedStyle(l).display==='flex';l.style.display=o?'none':'flex';b.setAttribute('aria-expanded',o?'false':'true');});}
+  const y=document.getElementById('year'); if(y) y.textContent=new Date().getFullYear();
+</script>
+</body>
+</html>
